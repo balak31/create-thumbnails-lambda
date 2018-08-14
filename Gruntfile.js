@@ -11,12 +11,15 @@ grunt.initConfig({
 	},
 	lambda_deploy: {
     	default: {
-    		arn: 'arn:aws:lambda:us-east-1:1234567890123:function:CreateThumbnail'
+    		arn: 'arn:aws:lambda:us-east-1:115372451355:function:CreateThumbnail'
     	}
     },
 	lambda_package: {
     	default: {
-    		include_time: false
+                options: {
+                    include_time: false,
+                    include_version: false
+            }
     	}
 	}
 });
